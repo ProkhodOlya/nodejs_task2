@@ -18,10 +18,7 @@ app.use(function(req, res, next) {
 
 app.get('/canonize', function (req, res) {
     // console.log(req.query);
-    return res.json({
-        url: req.query.url,
-        username: canonize(req.query.url),
-    });
+    return res.send(canonize(req.query.username));
 });
 
 app.listen(3000, function () {
@@ -83,8 +80,6 @@ async function getPokemon(url) {
     const pokemon = await response.json();
     return pokemon;
 }
-// console.log (getPokemon(1));
-// console.log (getPokemons);
 
 app.get('/', async (req, res) => {
     try {

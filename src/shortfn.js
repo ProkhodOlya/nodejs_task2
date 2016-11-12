@@ -19,15 +19,6 @@ export default function getFullName(fn){
                     default:
                         return 'Invalid fullname';
                 }
-                // if (arrFullName.length == 1) {
-                //     return arrFullName[0];
-                // } else if (arrFullName.length == 2) {
-                //     return arrFullName[1].toLowerCase()[0].toUpperCase() + arrFullName[1].toLowerCase().slice(1)  + ' ' + arrFullName[0].charAt(0).toUpperCase() + '.';
-                // } else if (arrFullName.length == 3) {
-                //     return arrFullName[2].toLowerCase()[0].toUpperCase() + arrFullName[2].toLowerCase().slice(1) + ' ' + arrFullName[0].charAt(0).toUpperCase() + '.' + ' ' + arrFullName[1].charAt(0).toUpperCase() + '.';
-                // } else {
-                //     return 'Invalid fullname';
-                // }
             }
             return 'Invalid fullname';
         }
